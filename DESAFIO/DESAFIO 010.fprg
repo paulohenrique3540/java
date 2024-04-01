@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="miguel.selvati"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 01:38:49 "/>
+        <attribute name="created" value="bWlndWVsLnNlbHZhdGk7TlQyMzsyMDI0LTAzLTA0OyIwMTozNjoyMyAiOzI4OTc="/>
+        <attribute name="edited" value="bWlndWVsLnNlbHZhdGk7TlQyMzsyMDI0LTAzLTA0OyIwMTozODo0OSAiOzE7MzAxNQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="bs, at, a" type="Integer" array="False" size=""/>
+            <input variable="bs"/>
+            <input variable="at"/>
+            <assign variable="a" expression="(bs*at)/2"/>
+            <output expression="a" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

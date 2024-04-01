@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="paulo.henrique"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-02-05 04:11:54 "/>
+        <attribute name="created" value="cGF1bG8uaGVucmlxdWU7TlQyMTsyMDI0LTAyLTA1OyIwMTo1Njo0MiAiOzI5MDU="/>
+        <attribute name="edited" value="cGF1bG8uaGVucmlxdWU7TlQyMTsyMDI0LTAyLTA1OyIwNDoxMTo1NCAiOzM7MzAxMg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="media, n1, n2, n3" type="Real" array="False" size=""/>
+            <declare name="pre" type="Integer" array="False" size=""/>
+            <declare name="nome" type="String" array="False" size=""/>
+            <input variable="nome"/>
+            <input variable="n1"/>
+            <input variable="n2"/>
+            <input variable="n3"/>
+            <input variable="pre"/>
+            <assign variable="media" expression="media(n1 ,n2 ,n3)"/>
+            <output expression="nome" newline="True"/>
+            <if expression="media&gt;=7">
+                <then>
+                    <if expression="pre&gt;=75">
+                        <then>
+                            <output expression="&quot;aprovado&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;reprovado&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;reprovado&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="media" type="Real" variable="media">
+        <parameters>
+            <parameter name="n1" type="Real" array="False"/>
+            <parameter name="n2" type="Real" array="False"/>
+            <parameter name="n3" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="media" type="Real" array="False" size=""/>
+            <assign variable="media" expression="(n1*2+n2*3+n3*5)/10"/>
+        </body>
+    </function>
+</flowgorithm>

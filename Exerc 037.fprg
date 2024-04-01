@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="paulo.henrique"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 11:23:27 "/>
+        <attribute name="created" value="cGF1bG8uaGVucmlxdWU7TlQyMTsyMDI0LTAzLTA0OyIxMDo1MDozMyAiOzI4OTk="/>
+        <attribute name="edited" value="cGF1bG8uaGVucmlxdWU7TlQyMTsyMDI0LTAzLTA0OyIxMToyMzoyNyAiOzE7MzAxMQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="ba, al" type="Integer" array="False" size=""/>
+            <output expression="&quot;qual a base do ret&#226;ngulo?&quot;" newline="True"/>
+            <input variable="ba"/>
+            <output expression="&quot;qual a altura do ret&#226;ngulo?&quot;" newline="True"/>
+            <input variable="al"/>
+            <output expression="&quot;o per&#237;metro =&quot;&amp; al*2+ba*2" newline="True"/>
+            <output expression="&quot;a &#225;rea &#233; =&quot;&amp; al*ba" newline="True"/>
+            <output expression="&quot;a medida da diagonal &#233; = &#225; raiz de &quot;&amp; (al^2+ba^2)" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

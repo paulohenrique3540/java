@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="miguel.selvati"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 08:49:47 "/>
+        <attribute name="created" value="bWlndWVsLnNlbHZhdGk7TlQyMzsyMDI0LTAzLTA0OyIwODoyNDozNSAiOzI5MDQ="/>
+        <attribute name="edited" value="bWlndWVsLnNlbHZhdGk7TlQyMzsyMDI0LTAzLTA0OyIwODo0OTo0NyAiOzE7MzAyMg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="data, resto, ano, mes, dia" type="Integer" array="False" size=""/>
+            <input variable="data"/>
+            <assign variable="ano" expression="data/10000"/>
+            <assign variable="resto" expression="data%10000"/>
+            <assign variable="mes" expression="resto/100"/>
+            <assign variable="resto" expression="resto%100"/>
+            <assign variable="dia" expression="resto"/>
+            <output expression="dia&amp;&quot;/&quot;&amp;mes&amp;&quot;/&quot;&amp;ano" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="paulo.henrique"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 09:19:03 "/>
+        <attribute name="created" value="cGF1bG8uaGVucmlxdWU7TlQyMTsyMDI0LTAzLTA0OyIwOTowNjo0NiAiOzI5MTI="/>
+        <attribute name="edited" value="cGF1bG8uaGVucmlxdWU7TlQyMTsyMDI0LTAzLTA0OyIwOToxOTowMyAiOzE7MzAxNw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="angulo" type="Integer" array="False" size=""/>
+            <declare name="an1" type="Real" array="False" size=""/>
+            <input variable="angulo"/>
+            <assign variable="an1" expression="Sin (angulo)"/>
+            <output expression="an1" newline="True"/>
+            <assign variable="an1" expression="Cos (angulo)"/>
+            <output expression="an1" newline="True"/>
+            <assign variable="an1" expression="Tan (angulo)"/>
+            <output expression="an1" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

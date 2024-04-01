@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="paulo.henrique"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-01-29 02:41:33 "/>
+        <attribute name="created" value="cGF1bG8uaGVucmlxdWU7REVTS1RPUC1WTk5RNlYzOzIwMjQtMDEtMjk7IjAyOjMyOjIxICI7MzczOA=="/>
+        <attribute name="edited" value="cGF1bG8uaGVucmlxdWU7REVTS1RPUC1WTk5RNlYzOzIwMjQtMDEtMjk7IjAyOjM0OjMyICI7MjtwYXVsby5oZW5yaXF1ZTtERVNLVE9QLVZOTlE2VjM7MjAyNC0wMS0yNDsiMDQ6NTA6MjIgIjtleGVyYyAwMDkuZnByZzs4OTAy"/>
+        <attribute name="edited" value="cGF1bG8uaGVucmlxdWU7REVTS1RPUC1WTk5RNlYzOzIwMjQtMDEtMjk7IjAyOjQxOjMzICI7MTszODQ5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="b" type="Integer" array="False" size=""/>
+            <assign variable="b" expression="1"/>
+            <while expression="b &lt;= 100">
+                <if expression="b%13==0">
+                    <then>
+                        <output expression="b" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="b" expression="b+1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="paulo.henrique"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-02-19 05:12:37 "/>
+        <attribute name="created" value="cGF1bG8uaGVucmlxdWU7TlQyMTsyMDI0LTAyLTE5OyIwNDowNToyNSAiOzI5MDg="/>
+        <attribute name="edited" value="cGF1bG8uaGVucmlxdWU7TlQyMTsyMDI0LTAyLTE5OyIwNToxMjozNyAiOzI7MzAxOQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="arq, reg, gra" type="String" array="False" size=""/>
+            <declare name="nome" type="String" array="True" size="5"/>
+            <declare name="num" type="String" array="True" size="5"/>
+            <declare name="n, rep" type="Real" array="False" size=""/>
+            <assign variable="arq" expression="&quot;teste2.txt&quot;"/>
+            <open expression="arq" mode="write"/>
+            <assign variable="reg" expression="&quot;id,nome,salario,diastrab,inss,bcir,ir,vt,vr,salliq&quot;"/>
+            <write expression="reg"/>
+            <for variable="rep" start="0" end="4" direction="inc" step="1">
+                <input variable="nome[rep]"/>
+                <assign variable="gra" expression="(rep+1)&amp;&quot;,&quot;&amp;nome[rep]&amp;&quot;,1000.00,30,75.00,925.00,0.00,60.00,10.00,855.00&quot;"/>
+                <write expression="gra"/>
+            </for>
+            <close mode="write"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="paulo.henrique"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 08:55:25 "/>
+        <attribute name="created" value="cGF1bG8uaGVucmlxdWU7TlQyMTsyMDI0LTAzLTA0OyIwODozOTowMCAiOzI5MDc="/>
+        <attribute name="edited" value="cGF1bG8uaGVucmlxdWU7TlQyMTsyMDI0LTAzLTA0OyIwODo1NToyNSAiOzE7MzAyMA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="data" type="Integer" array="False" size=""/>
+            <declare name="data1, data2, data3" type="Integer" array="False" size=""/>
+            <input variable="data"/>
+            <assign variable="data1" expression="data%100"/>
+            <assign variable="data2" expression="data%10000"/>
+            <assign variable="data2" expression="data2/100"/>
+            <assign variable="data3" expression="data/10000"/>
+            <output expression="data1&amp;&quot;/&quot;&amp;data2&amp;&quot;/&quot;&amp;data3" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

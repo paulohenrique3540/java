@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="marya.eduarda"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-06 04:24:25 "/>
+        <attribute name="created" value="bWFyeWEuZWR1YXJkYTtOVDExOzIwMjQtMDMtMDY7IjA0OjE2OjQ2ICI7Mjc2Mw=="/>
+        <attribute name="edited" value="bWFyeWEuZWR1YXJkYTtOVDExOzIwMjQtMDMtMDY7IjA0OjI0OjI1ICI7MTsyODY3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n" type="Real" array="True" size="10"/>
+            <declare name="i, m, me" type="Real" array="False" size=""/>
+            <assign variable="m" expression="0"/>
+            <assign variable="me" expression="0"/>
+            <for variable="i" start="0" end="9" direction="inc" step="1">
+                <input variable="n[i]"/>
+                <if expression="n[i]&gt;m">
+                    <then>
+                        <assign variable="m" expression="n[i]"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <for variable="i" start="0" end="9" direction="inc" step="1">
+                <if expression="n[i]&lt;me">
+                    <then>
+                        <assign variable="me" expression="n[i]"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="m&amp;&quot; &quot;&amp;me" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

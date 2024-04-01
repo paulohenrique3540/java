@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="joao.pedro"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 10:27:53 "/>
+        <attribute name="created" value="am9hby5wZWRybztOVDI3OzIwMjQtMDMtMDQ7IjA4OjM5OjM1ICI7MjQ3NA=="/>
+        <attribute name="edited" value="am9hby5wZWRybztOVDI3OzIwMjQtMDMtMDQ7IjEwOjI3OjUzICI7MTsyNTcy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="b, al, p, ar, d" type="Integer" array="False" size=""/>
+            <input variable="b"/>
+            <input variable="al"/>
+            <assign variable="p" expression="(b*2)+(al*2)"/>
+            <assign variable="ar" expression="b*al"/>
+            <assign variable="d" expression="((b^2)+(al^2))^0.5"/>
+            <output expression="&quot;- O Per&#237;metro do ret&#226;ngulo &#233;&quot;&amp;&quot; &quot;&amp; p" newline="True"/>
+            <output expression="&quot;- A &#225;rea do ret&#226;ngulo &#233;&quot;&amp;&quot; &quot;&amp; ar" newline="True"/>
+            <output expression="&quot;- A medida da diagonal do ret&#226;ngulo &#233;&quot;&amp;&quot; &quot;&amp; d" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

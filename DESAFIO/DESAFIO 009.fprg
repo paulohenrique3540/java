@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="miguel.selvati"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 01:36:19 "/>
+        <attribute name="created" value="bWlndWVsLnNlbHZhdGk7TlQyMzsyMDI0LTAzLTA0OyIwMTozNDoxOCAiOzI4OTk="/>
+        <attribute name="edited" value="bWlndWVsLnNlbHZhdGk7TlQyMzsyMDI0LTAzLTA0OyIwMTozNjoxOSAiOzE7MzAxMA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="bs, at, pf, dn" type="Integer" array="False" size=""/>
+            <input variable="bs"/>
+            <input variable="at"/>
+            <input variable="pf"/>
+            <assign variable="dn" expression="(bs^2)+(at^2)+(pf^2)"/>
+            <output expression="dn" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

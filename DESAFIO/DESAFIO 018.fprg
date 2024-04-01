@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="miguel.selvati"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 04:20:24 "/>
+        <attribute name="created" value="bWlndWVsLnNlbHZhdGk7TlQyMzsyMDI0LTAzLTA0OyIwMzozNjo1NyAiOzI5MDY="/>
+        <attribute name="edited" value="bWlndWVsLnNlbHZhdGk7TlQyMzsyMDI0LTAzLTA0OyIwNDoyMDoyNCAiOzE7MzAwMg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num, denum, num1, denum1, soma, multi, mmc, num1a, num2a, multi1a" type="Integer" array="False" size=""/>
+            <input variable="num"/>
+            <input variable="denum"/>
+            <input variable="num1"/>
+            <input variable="denum1"/>
+            <assign variable="mmc" expression="denum1*denum"/>
+            <assign variable="num2a" expression="mmc/denum*num"/>
+            <assign variable="num1a" expression="mmc/denum1*num1"/>
+            <assign variable="soma" expression="num1a+num2a"/>
+            <output expression="soma&amp;&quot;/&quot;&amp;mmc" newline="True"/>
+            <assign variable="multi" expression="num*num1"/>
+            <assign variable="multi1a" expression="denum*denum1"/>
+            <output expression="multi&amp;&quot;/&quot;&amp;multi1a" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

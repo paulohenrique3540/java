@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="paulo.henrique"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-01-29 04:19:10 "/>
+        <attribute name="created" value="cGF1bG8uaGVucmlxdWU7REVTS1RPUC1WTk5RNlYzOzIwMjQtMDEtMjk7IjAyOjUxOjU3ICI7Mzc0OA=="/>
+        <attribute name="edited" value="cGF1bG8uaGVucmlxdWU7REVTS1RPUC1WTk5RNlYzOzIwMjQtMDEtMjk7IjA0OjE5OjEwICI7MTszODUx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="imc, altura, peso" type="Real" array="False" size=""/>
+            <input variable="altura"/>
+            <input variable="peso"/>
+            <assign variable="imc" expression="peso/(altura^2)"/>
+            <output expression="imc" newline="True"/>
+            <if expression="imc&lt;=18.5">
+                <then>
+                    <output expression="&quot;magro&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="imc&lt;=24.9">
+                        <then>
+                            <output expression="&quot;normal&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="imc&lt;=29.9">
+                                <then>
+                                    <output expression="&quot;sobrepeso&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="imc&lt;=39.9">
+                                        <then>
+                                            <output expression="&quot;obesidade&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;obesidade grave&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="paulo.henrique"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 04:16:25 "/>
+        <attribute name="created" value="cGF1bG8uaGVucmlxdWU7TlQyMTsyMDI0LTAzLTA0OyIwNDoxMjowMyAiOzI4OTc="/>
+        <attribute name="edited" value="cGF1bG8uaGVucmlxdWU7TlQyMTsyMDI0LTAzLTA0OyIwNDoxNjoyNSAiOzE7MzAxMw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="hora, h1, h2" type="Integer" array="False" size=""/>
+            <input variable="hora"/>
+            <assign variable="h1" expression="hora%100"/>
+            <assign variable="h2" expression="hora/100"/>
+            <output expression="h2*60+h1&amp;&quot; minutos&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

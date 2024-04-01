@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="miguel.selvati"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-06 10:29:33 "/>
+        <attribute name="created" value="bWlndWVsLnNlbHZhdGk7TlQyMzsyMDI0LTAzLTA2OyIwODo1MjozNSAiOzI5MDc="/>
+        <attribute name="edited" value="bWlndWVsLnNlbHZhdGk7TlQyMzsyMDI0LTAzLTA2OyIxMDoyOTozMyAiOzI7MzAxMQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c, ang" type="Integer" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <input variable="c"/>
+            <if expression="a&lt;b+c &amp;&amp; b&lt;a+c &amp;&amp; c&lt;a+b">
+                <then>
+                    <if expression="a^2= (b^2)+(c^2) || b^2=(a^2)+(c^2) || c^2=(a^2)+b(b^2)">
+                        <then>
+                            <output expression="&quot;triangulo retangulo&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="a^2&lt;(b^2)+(c^2) || b^2&lt;(a^2)+(c^2) || c^2&lt;(a^2)+b(b^2)">
+                                <then>
+                                    <output expression="&quot;triangulo acutangulo&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;triangulo obtusangulo&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;n&#227;o forma um triangulo&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

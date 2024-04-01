@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="miguel.selvati"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 09:26:13 "/>
+        <attribute name="created" value="bWlndWVsLnNlbHZhdGk7TlQyMzsyMDI0LTAzLTA0OyIwOToyMDowMiAiOzI4OTU="/>
+        <attribute name="edited" value="bWlndWVsLnNlbHZhdGk7TlQyMzsyMDI0LTAzLTA0OyIwOToyNjoxMyAiOzE7MzAxMQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numero, resto" type="Real" array="False" size=""/>
+            <declare name="u, d, c" type="Integer" array="False" size=""/>
+            <input variable="numero"/>
+            <assign variable="c" expression="numero/100"/>
+            <assign variable="resto" expression="numero%100"/>
+            <assign variable="d" expression="resto/10"/>
+            <assign variable="resto" expression="resto%10"/>
+            <assign variable="u" expression="resto"/>
+            <output expression="u&amp;d&amp;c" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

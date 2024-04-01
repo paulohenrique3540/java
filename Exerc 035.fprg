@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="paulo.henrique"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 10:03:44 "/>
+        <attribute name="created" value="cGF1bG8uaGVucmlxdWU7TlQyMTsyMDI0LTAzLTA0OyIwOTo0OTo0MyAiOzI5MTY="/>
+        <attribute name="edited" value="cGF1bG8uaGVucmlxdWU7TlQyMTsyMDI0LTAzLTA0OyIxMDowMzo0NCAiOzE7MzAwNw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="kw, kw1, kw2, kw3" type="Real" array="False" size=""/>
+            <input variable="kw"/>
+            <assign variable="kw1" expression="(1412/7)/100"/>
+            <assign variable="kw2" expression="kw1*kw"/>
+            <assign variable="kw3" expression="(kw2/100)*90"/>
+            <output expression="&quot;valor de cada kw/h = &quot;&amp;kw1" newline="True"/>
+            <output expression="&quot;valor a ser pago = &quot;&amp;kw2" newline="True"/>
+            <output expression="&quot;valor com 10% de desconto&quot;&amp;kw3" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

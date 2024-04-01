@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="paulo.henrique"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-02-14 04:47:56 "/>
+        <attribute name="created" value="cGF1bG8uaGVucmlxdWU7REVTS1RPUC1WTk5RNlYzOzIwMjQtMDEtMjk7IjAyOjUxOjU3ICI7Mzc0OA=="/>
+        <attribute name="edited" value="cGF1bG8uaGVucmlxdWU7REVTS1RPUC1WTk5RNlYzOzIwMjQtMDEtMjk7IjA0OjE5OjEwICI7MTszODUx"/>
+        <attribute name="edited" value="cGF1bG8uaGVucmlxdWU7TlQyMTsyMDI0LTAyLTA3OyIwMzo1Nzo0OSAiOzE7cGF1bG8uaGVucmlxdWU7TlQyMTsyMDI0LTAyLTA3OyIwMzo1MzoyNSAiOzU5OTE="/>
+        <attribute name="edited" value="cGF1bG8uaGVucmlxdWU7TlQyMTsyMDI0LTAyLTE0OyIwNDo0Nzo1NiAiOzY7MzAyNg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="salario, diat, sall" type="Real" array="False" size=""/>
+            <declare name="inss, ir, valet, valer, saliq" type="Real" array="False" size=""/>
+            <declare name="nome" type="String" array="False" size=""/>
+            <input variable="nome"/>
+            <input variable="salario"/>
+            <input variable="diat"/>
+            <assign variable="sall" expression="(salario/30)*diat"/>
+            <assign variable="valet" expression="(sall/100)*6"/>
+            <assign variable="valer" expression="(sall/100)*1"/>
+            <if expression="sall&lt;=1412">
+                <then>
+                    <assign variable="inss" expression="sall*(7.5/100)"/>
+                </then>
+                <else>
+                    <if expression="sall&lt;=2666.68">
+                        <then>
+                            <assign variable="inss" expression="sall*(9/100)-21.18"/>
+                        </then>
+                        <else>
+                            <if expression="sall&lt;=4000.03">
+                                <then>
+                                    <assign variable="inss" expression="sall*(12/100)-101.18"/>
+                                </then>
+                                <else>
+                                    <if expression="sall&lt;=7786.02">
+                                        <then>
+                                            <assign variable="inss" expression="sall*(14/100)-181.18"/>
+                                        </then>
+                                        <else>
+                                            <assign variable="inss" expression="908.86"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <assign variable="sall" expression="sall-inss"/>
+            <if expression="sall&lt;=2112">
+                <then>
+                    <assign variable="ir" expression="0"/>
+                </then>
+                <else>
+                    <if expression="sall&lt;=2826.65">
+                        <then>
+                            <assign variable="ir" expression="(7.5/100)*sall-158.4"/>
+                        </then>
+                        <else>
+                            <if expression="sall&lt;=3751.05">
+                                <then>
+                                    <assign variable="ir" expression="(15/100)*sall-370.40"/>
+                                </then>
+                                <else>
+                                    <if expression="sall&lt;=4664.68">
+                                        <then>
+                                            <assign variable="ir" expression="(22.5/100)*sall-651.73"/>
+                                        </then>
+                                        <else>
+                                            <assign variable="ir" expression="(27.5/100)*sall-884.96"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <assign variable="sall" expression="sall-ir"/>
+            <assign variable="saliq" expression="sall-valet-valer"/>
+            <output expression="&quot;o vale transporte &#233; &quot; &amp; valet" newline="True"/>
+            <output expression="&quot;o vale refei&#231;&#227;o &#233; &quot; &amp; valer" newline="True"/>
+            <output expression="&quot;o inss &#233; &quot; &amp; inss" newline="True"/>
+            <output expression="&quot;o ir &#233; &quot; &amp; ir" newline="True"/>
+            <output expression="&quot;o salario &#233; &quot; &amp; sall" newline="True"/>
+            <output expression="&quot;o salario liquido &#233; &quot; &amp; saliq" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

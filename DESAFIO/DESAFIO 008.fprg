@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="miguel.selvati"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 11:26:35 "/>
+        <attribute name="created" value="bWlndWVsLnNlbHZhdGk7TlQyMzsyMDI0LTAzLTA0OyIxMToxNzowNSAiOzI4OTc="/>
+        <attribute name="edited" value="bWlndWVsLnNlbHZhdGk7TlQyMzsyMDI0LTAzLTA0OyIxMToyNjozNSAiOzE7MzAwOA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="raio" type="Real" array="False" size=""/>
+            <declare name="peri, area" type="Integer" array="False" size=""/>
+            <input variable="raio"/>
+            <assign variable="peri" expression="2*Pi*raio"/>
+            <output expression="peri" newline="True"/>
+            <assign variable="area" expression="Pi*(raio^2)"/>
+            <output expression="area" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

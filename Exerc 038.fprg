@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="paulo.henrique"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 01:56:25 "/>
+        <attribute name="created" value="cGF1bG8uaGVucmlxdWU7TlQyMTsyMDI0LTAzLTA0OyIwMTo0NDoxMSAiOzI4OTg="/>
+        <attribute name="edited" value="cGF1bG8uaGVucmlxdWU7TlQyMTsyMDI0LTAzLTA0OyIwMTo1NjoyNSAiOzE7MzAxNA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="r, c" type="Real" array="False" size=""/>
+            <input variable="r"/>
+            <assign variable="c" expression="2*3.1415*r"/>
+            <output expression="c" newline="True"/>
+            <assign variable="c" expression="3.1415*r^2"/>
+            <output expression="c" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

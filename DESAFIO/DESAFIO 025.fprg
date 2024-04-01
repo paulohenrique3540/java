@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="rafael.trilha"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-06 08:46:28 "/>
+        <attribute name="created" value="cmFmYWVsLnRyaWxoYTtOVDE0OzIwMjQtMDMtMDY7IjA4OjEwOjExICI7Mjc1NQ=="/>
+        <attribute name="edited" value="cmFmYWVsLnRyaWxoYTtOVDE0OzIwMjQtMDMtMDY7IjA4OjQ2OjI4ICI7MTsyODgw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, s" type="Integer" array="False" size=""/>
+            <declare name="n" type="Real" array="True" size="3"/>
+            <input variable="n[0]"/>
+            <input variable="n[1]"/>
+            <input variable="n[2]"/>
+            <if expression="n[0]&lt;n[1]+n[2]&amp;&amp;n[1]&lt;n[2]+n[0]&amp;&amp;n[2]&lt;n[0]+n[1]">
+                <then>
+                    <output expression="&quot;&#233; possivel&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;nao &#233; possivel&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

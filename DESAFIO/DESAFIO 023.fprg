@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="miguel.selvati"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-06 07:57:54 "/>
+        <attribute name="created" value="bWlndWVsLnNlbHZhdGk7TlQyMzsyMDI0LTAzLTA0OyIwNTowMDo0MCAiOzI4OTE="/>
+        <attribute name="edited" value="bWlndWVsLnNlbHZhdGk7TlQyMzsyMDI0LTAzLTA2OyIwNzo1Nzo1NCAiOzI7MzAyMQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="va, apm, nm, tx, resul" type="Real" array="False" size=""/>
+            <output expression="&quot;aplica&#231;&#227;o mensal&quot;" newline="True"/>
+            <input variable="apm"/>
+            <output expression="&quot;taxa&quot;" newline="True"/>
+            <input variable="tx"/>
+            <output expression="&quot;numero de mes&quot;" newline="True"/>
+            <input variable="nm"/>
+            <assign variable="resul" expression="(apm*((1+tx)^nm-1)/tx)"/>
+            <output expression="resul" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

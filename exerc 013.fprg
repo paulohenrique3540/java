@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="paulo.henrique"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-01-29 04:33:54 "/>
+        <attribute name="created" value="cGF1bG8uaGVucmlxdWU7REVTS1RPUC1WTk5RNlYzOzIwMjQtMDEtMjk7IjA0OjE5OjE4ICI7Mzc1MQ=="/>
+        <attribute name="edited" value="cGF1bG8uaGVucmlxdWU7REVTS1RPUC1WTk5RNlYzOzIwMjQtMDEtMjk7IjA0OjIwOjEzICI7MTtwYXVsby5oZW5yaXF1ZTtERVNLVE9QLVZOTlE2VjM7MjAyNC0wMS0yOTsiMDI6NTE6NTcgIjs3NjUz"/>
+        <attribute name="edited" value="cGF1bG8uaGVucmlxdWU7REVTS1RPUC1WTk5RNlYzOzIwMjQtMDEtMjk7IjA0OjMzOjU0ICI7MTszODU1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="data, idade, ano, mes, dia" type="Integer" array="False" size=""/>
+            <declare name="nome" type="String" array="False" size=""/>
+            <input variable="nome"/>
+            <input variable="dia"/>
+            <input variable="mes"/>
+            <input variable="ano"/>
+            <assign variable="data" expression="2024-ano"/>
+            <output expression="nome" newline="True"/>
+            <output expression="data" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

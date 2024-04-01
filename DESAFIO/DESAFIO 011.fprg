@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="miguel.selvati"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 01:46:01 "/>
+        <attribute name="created" value="bWlndWVsLnNlbHZhdGk7TlQyMzsyMDI0LTAzLTA0OyIwMTozMDo0NyAiOzI4OTc="/>
+        <attribute name="edited" value="bWlndWVsLnNlbHZhdGk7TlQyMzsyMDI0LTAzLTA0OyIwMTo0NjowMSAiOzE7MzAwMg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="CA, CO" type="Integer" array="False" size=""/>
+            <declare name="HIP" type="Integer" array="False" size=""/>
+            <input variable="CA"/>
+            <input variable="CO"/>
+            <assign variable="HIP" expression="(CO^2)+(CA^2)"/>
+            <assign variable="HIP" expression="HIP^0.5"/>
+            <output expression="HIP" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

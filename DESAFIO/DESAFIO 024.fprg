@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="miguel.selvati"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-06 08:43:56 "/>
+        <attribute name="created" value="bWlndWVsLnNlbHZhdGk7TlQyMzsyMDI0LTAzLTA2OyIwNzo1ODozMyAiOzI5MTA="/>
+        <attribute name="edited" value="bWlndWVsLnNlbHZhdGk7TlQyMzsyMDI0LTAzLTA2OyIwODo0Mzo1NiAiOzE7MzAxOA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num, soma, multi, c, b, a, num1, d, e, f, a1, b1, c1" type="Integer" array="False" size=""/>
+            <input variable="num"/>
+            <assign variable="a" expression="num/100"/>
+            <assign variable="b" expression="num%100/10"/>
+            <assign variable="c" expression="num%100%10"/>
+            <assign variable="d" expression="c"/>
+            <assign variable="e" expression="b"/>
+            <assign variable="f" expression="a"/>
+            <assign variable="num1" expression="c*100+b*10+a"/>
+            <assign variable="soma" expression="num+num1"/>
+            <output expression="num" newline="True"/>
+            <output expression="num1" newline="True"/>
+            <output expression="soma" newline="True"/>
+            <assign variable="a1" expression="soma/100"/>
+            <assign variable="b1" expression="soma%100/10"/>
+            <assign variable="c1" expression="soma%100%10"/>
+            <assign variable="multi" expression="(a1*1)+(b1*2)+(c1*3)"/>
+            <output expression="multi" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
